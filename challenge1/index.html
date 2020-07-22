@@ -5,17 +5,168 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <style>
+    body{
+      background-color: #ECF2F8;
+    }
+    .text-container{
+      width:35%;
+      height:300px;
+      background-color:#FFFFFF;
+      border-radius:20px;
+      box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+      display: flex;
+      margin:15% 25% auto auto;
+      position:relative;
+      
+      
+      
+    
+   }
+   .default-img img{
+      height:300px;
+      width:300px;
+      transform:translateX(-77%);
+      border-radius:20px 0px 0px 20px;
+    }
+    .about-text{
+      margin-left:-9%;
+      margin-right:-19%;
+      margin-top:2%; 
+      width:550px;
+      transform:translateX(-37%);
+    }
+    
+    
+    .about-text p:nth-child(1){
+      font-family:Manrope;
+      font-weight:700;
+      text-align:left;
+      font-size:24px;
+
+
+
+    }
+    .about-text p:nth-child(2){
+      
+      color:  #4E5765;
+      font-weight:500;
+    }
+   .profile{
+     margin-left:-2%;
+   }
+    .profile img{
+      height:55px;
+      width:55px;
+      border-radius:100%;
+    
+    }
+    .profile p{
+      margin:-9% auto auto 15%;
+      
+      
+
+    }
+    .shareicon{
+      
+      height:40px;
+      width:40px;
+      margin:-4% auto auto 90%;
+      background-color: #ECF2F8;
+      border-radius:100%;
+      
+      
+    }
+    .shareicon img{
+      height:18px;
+      width:18px;
+      margin:6% auto auto 15%;
+    }
+    .shareicon .tooltip {
+      display:inline-block;
+      visibility:hidden;
+      z-index:1;
+      background-color: #6D7F97;
+      
+      position:absolute;
+      border-radius: 6px;
+      text-align:left;
+      width:260px;
+      height:50px;
+      
+      bottom:30%;
+      left:80%;
+      margin-left:-70px;
+    }
+    .shareicon .tooltip img{
+      bottom:30%;
+    }
+    .shareicon .tooltip ::after{
+    
+      content:"";
+      color:black;
+      top:100%;
+      left:50%;
+      position:absolute;
+      border-width:5px;
+      border-style:solid;
+      
+      border-color: black transparent transparent transparent;
+    }
+    .shareicon:hover .tooltip{
+      visibility:visible;
+    }
+
+    
+
+
+  
+  </style>
   
   <title>Article</title>
 </head>
 <body>
+  <section>
+  <div class="text-container">
+    <div class="default-img">
+    <img src="drawers.jpg">
+    </div>
+    <div class="about-text">
+    
+      <p>Shift the overall look and feel by adding these wonderful 
+        touches to furniture in your home</p>
+        <p>Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I’ve got some simple tips 
+          to help you make any room feel complete.</p>
+          <div class="profile">
+    
+            <img src="avatar-michelle.jpg">
+            <p>28 Jun 2020</p>
+            <p>Mitchell Appleton</p>
+            
+        
+          </div>
+          <div class="shareicon">
+            &nbsp;<img src="icon-share.svg">
+            <span class="tooltip"><span style="opacity:0.25;"><font color="white">&nbspS H A R E  </font></span>
+			<img src="icon-facebook.svg">
+            <img src="icon-twitter.svg">
+            <img src="icon-pinterest.svg">
+            </span>
+            
+          </div>
+          
+          
+    </div>
+    
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+  </div>
+  
+  </section>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+  
+
+  
   
 </body>
 </html>
